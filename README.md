@@ -2,9 +2,9 @@
 
 ## 📌 03. 설계 원칙(SOLID)
 
-### 1. SRP : 단일 책임 원칙 
+### 1. SRP : 단일 책임 원칙, 하나의 액터에 대해 책임져야함
 
-> 하나의 액터에 대해 책임 져야함
+> ### 👉 하나의 액터에 대해 책임 져야함
 
 - 액터 : 변경을 요청하는 한명 이상의 사람
 - 단일 모듈은 변경의 이유가 하나
@@ -12,7 +12,22 @@
 
 
 
-> 서로 다른 액터는 분리해서 관리
+> ### 👉 서로 다른 액터는 그에 대응하는 클래스를 분리해서 관리
+
+- 세명의 액터에 대해 책임지고 있음 
+<img src="https://github.com/jongheonleee/clean_architecture/assets/87258372/678170a5-3a45-4e0a-93db-dfd1c314edd8" width="500" height="500"/>
+
+- 그 중 두 명의 액터가 특정 알고리즘을 공유 
+<img src="https://github.com/jongheonleee/clean_architecture/assets/87258372/a4e7de29-e2bb-4285-a29d-4b3caf863b55" width="500" height="500"/>
+
+### 💥 문제 발생 
+- 공유한 알고리즘의 변경 사항이 2개, 만약 한 곳에 변경 사항이 발생되었고 이를 처리한다면, 나머지 액터는 변경된 알고리즘을 사용. 즉 꼬여버릴 수 있음
+- 두 명의 액터가 동시에 변경 사항이 발생함. 즉 변경 사항이 충돌되어 병합 발생
+
+### ✅ 해결
+- 서로 다른 클래스로 분리해내기 
+<img src="https://github.com/jongheonleee/clean_architecture/assets/87258372/709fc478-b35c-4245-b56d-bb48ba01af9d" width="500" height="500"/>
+
 
 
 
