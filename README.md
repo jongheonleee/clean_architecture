@@ -42,7 +42,11 @@
 - 아키텍쳐 수준에서도 OCP를 적용해야함
   - 다양한 디자인 패턴들은 모두 OCP 원칙을 준수하기 위해 나옴
   - 예를 들어, Template Method Pattern, Strategy, Iterator ...
-  - 위의 패턴 모두 설계와 구현부를 분리해내어 OCP를 지킴 
+  - 위의 패턴 모두 설계와 구현부를 분리해내어 OCP를 지킴
+ 
+- OCP 대표 예시
+
+<img width="457" alt="OCP1" src="https://github.com/jongheonleee/clean_architecture/assets/87258372/822e8e2a-2606-41ba-abd9-b96d7e78f569">
 
 
 
