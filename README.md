@@ -23,12 +23,6 @@
   - 다형성 : 부모 타입 참조 변수로 자식 타입 사용 
     - 코드를 특정 클래스에 의존하지 않으며 프로그래밍 -> 변경에 유리 
 
-소스 코드 의존성 == 제어 흐름 
-<img src="https://github.com/jongheonleee/clean_architecture/assets/87258372/ab8c3d72-fadf-4e3d-908d-1ed689ce4c45" width="500" height="500"/>
-
-소스 코드 의존성 != 제어 흐름 
-<img src="https://github.com/jongheonleee/clean_architecture/assets/87258372/ea492b83-d4cb-44d7-b7a6-54c2f89c95dd" width="500" height="500"/>
-
 - 의존성 역전(다형성)
   - 호출 트리, 의존성의 방향은 반드시 제어흐름을 따름
   - 하지만, A가 B를 알고 있는데, 그 사이의 인터페이스를 배치하면 의존성이 제어흐름의 방향과 일치하지 않음
@@ -36,6 +30,12 @@
     - 변경에 유리함 
     - 배포 독립성 : 컴포넌트 소스 코드 변경 -> 해당 코드가 포함된 컴포넌트만 재배포
     - 개발 독립성 : 서로 다른 팀에서 각 모듈을 독립적으로 개발 
+
+  - 소스 코드 의존성 == 제어 흐름 
+<img src="https://github.com/jongheonleee/clean_architecture/assets/87258372/ab8c3d72-fadf-4e3d-908d-1ed689ce4c45" width="500" height="500"/>
+
+  - 소스 코드 의존성 != 제어 흐름 
+<img src="https://github.com/jongheonleee/clean_architecture/assets/87258372/ea492b83-d4cb-44d7-b7a6-54c2f89c95dd" width="500" height="500"/>
   
 - oop란?
   - 다형성을 이용하여 전체 시스템의 모든 소스 코드 의존성에 대한 제어 권한을 획득할 수 있음
